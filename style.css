@@ -55,3 +55,9 @@ h3 {
     font-size: 20px;
     font-family: 'Baloo Chettan 2', cursive;
 }
+
+@media all and (max-width: 400px) {
+    body {
+        height: 100vh;
+    }
+}
