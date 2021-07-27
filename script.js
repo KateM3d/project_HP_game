@@ -4,6 +4,13 @@ const answer = Math.floor(Math.random() * 25) + 1;
 console.log(answer)
 btn.addEventListener('click', play);
 
+input.addEventListener("keypress", function(e) {
+    if (e.keyCode === 13) {
+        play();
+    }
+})
+
+
 function play() {
     const number = input.value;
     if (number < 1 || number > 25) {
